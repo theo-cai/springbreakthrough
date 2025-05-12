@@ -5,8 +5,6 @@ library(scales)
 #install.packages("ggstats")
 library(ggstats)
 
-student <- read.csv("C:\\Users\\gyc4\\Documents\\Student Assessment Results.csv", header = TRUE)
-
 #Overall, how satisfied were you with your Spring Breakthrough experience? 
 student %>%
   ggplot(aes(x = Q1)) +
@@ -88,8 +86,6 @@ gglikert(Q4, labels_size = 6, include = Q4_1:Q4_5, sort = "ascending",
 
 
 ##LEADS
-leads <- read.csv("C:\\Users\\gyc4\\Documents\\Lead Assessment Results.csv", header = TRUE)
-
 #Do you think Spring Breakthrough adds something valuable to the Duke undergraduate experience?
 leads %>%
   ggplot(aes(x = Q2)) +
